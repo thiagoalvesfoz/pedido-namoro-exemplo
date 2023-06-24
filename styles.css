@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@300&display=swap');
+
+body {
+  font-family: 'Ysabeau Infant', sans-serif !important;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+/* TITLE */
+
+h1 {
+  font-size: 34px;
+  max-width: 950px;
+  margin: 50px auto;
+  padding: 0px 20px;
+  text-align: center;
+}
+
+/* BUTTONS */
+
+button#sim, button#nao {
+    font-family: 'Ysabeau Infant', sans-serif !important;
+    font-size: 24px !important;;
+    position: absolute;
+    z-index: 1;
+}
+
+#sim {
+  position: absolute;
+}
+
+#nao {
+  position: absolute;
+  transition: 0.1s;
+}
+
+.btn-yellow {
+  color: black !important;
+  background-color: #ffe54c !important;
+  border-color: #ffe54c !important;
+}
+
+button styles
+.button-52 {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border-radius: 0 !important;;
+  border: 1px solid black !important;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-52:after {
+  content: "";
+  background-color: #ffe54c;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+#sim.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 28px !important;
+    text-align: center;
+  }
+  
+  .button-52 {
+    font-size: 20px !important;;
+    padding: 5px 25px 5px !important;;
+    border-radius: 0 !important;;
+    border: 1px solid black !important;;
+    background-color: white !important;;
+  }
+  
+  .button-52:after {
+    top: 5px;
+    left: 5px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px !important;;
+  }
+}

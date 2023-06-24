@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="confetti.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="modal.css">
+  <title>Quero você</title>
+</head>
+<body>
+  <h1>Eu só preciso de um SIM, para fazer seus dias serem maravilhosos. Quer namorar comigo?</h1>
+  <button type="button" id="sim" class="button-52" data-toggle="modal" data-target="#scaleModal">Sim</button>
+  <button type="button" id="nao" class="button-52" >Não</button>
+
+  <!--Fade Centered Modal -->
+  <div class="modal fade-centered" id="scaleModal" tabindex="-1" role="dialog" aria-labelledby="scaleModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Aeee!!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="reset()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Te amo meu amor 😘</p>
+          <p>Bora um lanchinho?</p>
+        </div>
+        <div class="modal-footer">
+          <button id="#fechar" type="button" class="btn btn-primary btn-yellow" data-dismiss="modal" onclick="reset()">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fade Centered Modal -->
+  <div class="js-container container" style="top:0px;left:0px;position:fixed;display: none;"></div>
+
+  <script defer type="text/javascript" src="button-animation.js"></script>
+  <script defer type="text/javascript" src="confetti.js"></script>
+  <script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
